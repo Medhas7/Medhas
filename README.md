@@ -6,6 +6,14 @@
 
 **Core mission** — Ego dissolution + Prakriti evolution / mastery / excellence.
 
+### ▶ Get a live URL in one click
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMedhas7%2FMedhas%2Ftree%2Fclaude%2Fsarathi-os-mvp-0zk4rc&project-name=sarathi-os&repository-name=sarathi-os)
+
+Tap the button → sign in with GitHub → **Deploy**. Vercel gives you a public URL
+(e.g. `sarathi-os.vercel.app`) that works on any device. No keys needed — it runs
+in mock mode. Full walkthrough in [`DEPLOY.md`](DEPLOY.md).
+
 **Core law**
 
 ```
