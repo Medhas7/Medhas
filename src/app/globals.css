@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  SARATHI OS design tokens.
+  A calm, founder-grade dark interface: deep slate ground, parchment-warm text,
+  saffron/gold accents that nod to Dharma without becoming decorative.
+*/
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 40 30% 92%;
+
+    --card: 240 9% 7%;
+    --card-foreground: 40 30% 92%;
+
+    --primary: 38 92% 55%;
+    --primary-foreground: 240 20% 6%;
+
+    --secondary: 240 6% 14%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 240 6% 12%;
+    --muted-foreground: 240 5% 60%;
+
+    --accent: 30 80% 50%;
+    --accent-foreground: 240 20% 6%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 16%;
+    --input: 240 6% 16%;
+    --ring: 38 92% 55%;
+
+    --gold: 43 74% 60%;
+    --saffron: 26 90% 56%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image:
+      radial-gradient(60rem 60rem at 110% -10%, hsl(38 92% 55% / 0.06), transparent),
+      radial-gradient(50rem 50rem at -10% 10%, hsl(26 90% 56% / 0.05), transparent);
+    background-attachment: fixed;
+  }
+}
+
+/* Subtle custom scrollbar for the command surfaces. */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 9999px;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
